@@ -7,6 +7,7 @@ let
 	[
 		binutils gcc13 gdb
 		llvm_16 lld_16 clang_16
+		cppcheck
 	];
 
 	hooks = ''
