@@ -6,15 +6,15 @@ let
 	inputs =
 	[
 		binutils gcc13 gdb
-		llvm_16 lld_16 clang_16
+		llvm_17 lld_17 clang_17
 		cppcheck
 	];
 
 	hooks = ''
 		export NIX_ENV_NAME=cppdev
-		export CC=gcc
-		export AS=as
-		export LD=ld
+		unset CC
+		unset AS
+		unset LD
 	'';
 
 	localPath = ./base.nix;
